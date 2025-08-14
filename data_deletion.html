@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yêu cầu xoá dữ liệu - Ứng dụng QLH</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #111827; /* gray-900 */
+        --muted: #6b7280; /* gray-500 */
+        --brand: #2563eb; /* blue-600 */
+        --ring: #93c5fd; /* blue-300 */
+        --border: #e5e7eb; /* gray-200 */
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 820px;
+        padding: 24px;
+        margin: 0 auto;
+      }
+      header h1 {
+        margin: 0 0 8px 0;
+        font-size: 1.75rem;
+      }
+      header p {
+        margin: 0 0 16px 0;
+        color: var(--muted);
+      }
+      .tabs {
+        display: inline-flex;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        background: #f9fafb; /* gray-50 */
+      }
+      .tab-btn {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        padding: 10px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--muted);
+        transition: background 120ms ease, color 120ms ease;
+      }
+      .tab-btn[aria-selected="true"] {
+        color: var(--fg);
+        background: #fff;
+      }
+      .panel {
+        margin-top: 20px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      }
+      h2 {
+        margin-top: 1.25em;
+        font-size: 1.25rem;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .note {
+        background: #eff6ff; /* blue-50 */
+        border: 1px solid #bfdbfe; /* blue-200 */
+        color: #1e40af; /* blue-800 */
+        padding: 12px 14px;
+        border-radius: 10px;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      ol {
+        padding-left: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Yêu cầu xoá dữ liệu • Data Deletion Request</h1>
+        <p>
+          Trang này dành cho người dùng ứng dụng <strong>QLH</strong> do
+          <strong>Cục chuyển đổi số - Bộ Tài nguyên và Môi trường</strong>
+          phát triển. / This page is for users of <strong>QLH</strong> developed
+          by the
+          <strong
+            >Digital Transformation Department – Ministry of Natural Resources
+            and Environment</strong
+          >.
+        </p>
+        <div class="tabs" role="tablist" aria-label="Language tabs">
+          <button
+            id="tab-vi"
+            class="tab-btn"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-vi"
+          >
+            Tiếng Việt
+          </button>
+          <button
+            id="tab-en"
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-en"
+          >
+            English
+          </button>
+        </div>
+      </header>
+
+      <!-- Vietnamese Panel -->
+      <section
+        id="panel-vi"
+        class="panel"
+        role="tabpanel"
+        aria-labelledby="tab-vi"
+      >
+        <h2>1) Các loại dữ liệu được lưu</h2>
+        <ul>
+          <li>Tên đăng nhập</li>
+          <li>Mật khẩu</li>
+          <li>Token đăng nhập</li>
+        </ul>
+        <p>
+          Tất cả dữ liệu trên chỉ được lưu trữ <strong>cục bộ</strong> trên
+          thiết bị của bạn bằng cơ chế mã hoá an toàn
+          <code>flutter_secure_storage</code> và
+          <strong>không được gửi lên máy chủ</strong>.
+        </p>
+
+        <h2>2) Cách yêu cầu xoá dữ liệu</h2>
+        <p>Bạn có thể xoá dữ liệu cá nhân của mình bằng cách:</p>
+        <ol>
+          <li>
+            Mở ứng dụng <strong>QLH</strong> → <em>Tài khoản</em> → chọn
+            <strong>Đăng xuất</strong>. Ngay lập tức, toàn bộ tên đăng nhập, mật
+            khẩu và token đăng nhập sẽ bị xoá khỏi thiết bị.
+          </li>
+          <li>
+            Nếu gặp khó khăn, vui lòng liên hệ email hỗ trợ
+            <a href="mailto:cshtbdattt@gmail.com">cshtbdattt@gmail.com</a> để
+            được hướng dẫn.
+          </li>
+        </ol>
+
+        <h2>3) Dữ liệu được giữ lại</h2>
+        <p>
+          Ứng dụng <strong>QLH</strong> <strong>không</strong> lưu trữ dữ liệu
+          cá nhân trên máy chủ. Sau khi bạn đăng xuất,
+          <em>không còn bản sao nào khác</em> của dữ liệu được giữ lại.
+        </p>
+
+        <h2>4) Thời gian lưu giữ dữ liệu</h2>
+        <p>
+          Dữ liệu (tên đăng nhập, mật khẩu, token) tồn tại trên thiết bị đến khi
+          bạn thực hiện <strong>Đăng xuất</strong> hoặc
+          <strong>gỡ cài đặt ứng dụng</strong>. Sau khi đăng xuất, dữ liệu bị
+          xoá <strong>ngay lập tức</strong> và không thể khôi phục.
+        </p>
+
+        <p class="note">
+          Lưu ý: Chính sách này áp dụng cho phiên bản hiện tại của ứng dụng QLH.
+          Nếu có thay đổi về cách lưu trữ dữ liệu, chúng tôi sẽ cập nhật tại
+          trang này. <br />
+          <i>Cập nhật lần cuối: 14/08/2025</i>
+        </p>
+      </section>
+
+      <!-- English Panel -->
+      <section
+        id="panel-en"
+        class="panel"
+        role="tabpanel"
+        aria-labelledby="tab-en"
+        hidden
+      >
+        <h2>1) Data types stored</h2>
+        <ul>
+          <li>Username</li>
+          <li>Password</li>
+          <li>Login token</li>
+        </ul>
+        <p>
+          All of the above data is stored
+          <strong>locally on your device</strong> using the secure encryption
+          mechanism <code>flutter_secure_storage</code> and is
+          <strong>not transmitted to any server</strong>.
+        </p>
+
+        <h2>2) How to request deletion</h2>
+        <p>You can delete your personal data by:</p>
+        <ol>
+          <li>
+            Open <strong>QLH</strong> → <em>Cài đặt</em> → select
+            <strong>Đăng xuất</strong>. Your username, password, and login token
+            will be removed from your device immediately.
+          </li>
+          <li>
+            If you need assistance, contact support at
+            <a href="mailto:cshtbdattt@gmail.com">cshtbdattt@gmail.com</a> for
+            guidance.
+          </li>
+        </ol>
+
+        <h2>3) Data retained</h2>
+        <p>
+          <strong>QLH</strong> does <strong>not</strong> store personal data on
+          any server. Once you log out, <em>no copies</em> of your data are
+          retained elsewhere.
+        </p>
+
+        <h2>4) Retention period</h2>
+        <p>
+          Your data (username, password, token) remains on your device until you
+          <strong>log out</strong> or <strong>uninstall the app</strong>. After
+          logging out, data is deleted <strong>immediately</strong> and cannot
+          be recovered.
+        </p>
+
+        <p class="note">
+          Note: This policy applies to the current version of QLH. If our data
+          storage practices change, we will update this page accordingly. <br />
+          <i>Last updated: 14/08/2025</i>
+        </p>
+      </section>
+    </div>
+
+    <script>
+      (function () {
+        const tabVi = document.getElementById("tab-vi");
+        const tabEn = document.getElementById("tab-en");
+        const panelVi = document.getElementById("panel-vi");
+        const panelEn = document.getElementById("panel-en");
+
+        function select(lang) {
+          const isVi = lang === "vi";
+          tabVi.setAttribute("aria-selected", String(isVi));
+          tabEn.setAttribute("aria-selected", String(!isVi));
+          panelVi.hidden = !isVi;
+          panelEn.hidden = isVi;
+          document.documentElement.lang = isVi ? "vi" : "en";
+          // Update hash for shareable link
+          const newHash = isVi ? "#vi" : "#en";
+          if (location.hash !== newHash) {
+            history.replaceState(null, "", newHash);
+          }
+        }
+
+        // Click handlers
+        tabVi.addEventListener("click", () => select("vi"));
+        tabEn.addEventListener("click", () => select("en"));
+
+        // Initial state from URL (#vi or #en) or ?lang=
+        const params = new URLSearchParams(location.search);
+        const qlang = (params.get("lang") || "").toLowerCase();
+        const hash = (location.hash || "").replace("#", "").toLowerCase();
+        if (qlang === "en" || hash === "en") select("en");
+        else select("vi");
+      })();
+    </script>
+  </body>
+</html>

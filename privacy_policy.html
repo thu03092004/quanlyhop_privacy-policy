@@ -1,283 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy / Chính sách quyền riêng tư</title>
     <style>
+      :root {
+        --bg: #f9f9f9;
+        --fg: #333; /* text color */
+        --muted: #6b7280; /* gray-500 */
+        --brand: #2563eb; /* blue-600 */
+        --border: #e5e7eb; /* gray-200 */
+      }
       body {
         max-width: 800px;
         margin: auto;
         padding: 20px;
         line-height: 1.8;
-        background-color: #f9f9f9;
-        color: #333;
+        background: var(--bg);
+        color: var(--fg);
         font-size: 18px;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       }
-
       h1 {
         font-weight: bold;
         font-size: 32px;
       }
-
       h2 {
         font-weight: bold;
         font-size: 24px;
         margin-top: 24px;
       }
-
       p,
       ul {
         font-size: 18px;
       }
-
       ul {
         padding-left: 24px;
       }
-
       .section {
         margin-bottom: 40px;
       }
-
       .lang-title {
         font-size: 20px;
         font-weight: bold;
         color: #444;
         margin-top: 10px;
       }
-
       hr {
         margin: 40px 0;
+      }
+      .tabs {
+        display: inline-flex;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        background: #f9fafb; /* gray-50 */
+        margin-bottom: 20px;
+      }
+      .tab-btn {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        padding: 10px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--muted);
+        transition: background 120ms ease, color 120ms ease;
+      }
+      .tab-btn[aria-selected="true"] {
+        color: var(--fg);
+        background: #fff;
+      }
+      .panel {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      }
+      code {
+        background: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      a {
+        color: var(--brand);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <h1>Privacy Policy for QLH</h1>
-    <p><em>Last updated: August 09, 2025</em></p>
+    <div class="container">
+      <h1>Privacy Policy / Chính sách quyền riêng tư</h1>
 
-    <div class="section">
-      <div class="lang-title">English</div>
-      <p>
-        This Privacy Policy applies to the mobile application
-        <strong>QLH</strong> developed by
-        <strong>Cục chuyển đổi số - Bộ Tài nguyên và Môi trường</strong>
-        ("we", "our", "us"). We are committed to protecting your privacy and
-        personal data. This Privacy Policy explains how we handle your data,
-        including what data we collect, how we use it, and your rights regarding
-        your information. We do not collect, store, or share any personal
-        information from our users unless explicitly stated.
-      </p>
-
-      <h2>1. Data Collected</h2>
-      <p>We may access the following permissions or data, with your consent:</p>
-      <ul>
-        <li>
-          <strong>Storage:</strong> Used to save meeting documents and related
-          files locally on your device. These files are not transmitted to our
-          servers.
-        </li>
-        <li>
-          <strong>Internet:</strong> Used for data synchronization and loading
-          content from our servers to provide app functionality.
-        </li>
-        <li>
-          <strong>Camera:</strong> Used when joining online meetings via Jitsi
-          Meet to enable your video, with your explicit permission.
-        </li>
-        <li>
-          <strong>Microphone:</strong> Used when participating in Jitsi Meet
-          meetings if you choose to enable audio.
-        </li>
-      </ul>
-
-      <h2>2. How We Use Data</h2>
-      <p>
-        All data is processed locally within the app to provide and improve its
-        features. We do not transmit, collect, or store your data on external
-        servers unless necessary for app functionality (e.g., synchronization or
-        online meeting services). Any data processed is done so with your
-        consent and is limited to the purposes outlined in this policy.
-      </p>
-
-      <h2>3. Third-Party Services</h2>
-      <p>
-        Our app integrates with Jitsi Meet for online meeting functionality.
-        When you use Jitsi Meet, your video and audio data may be processed by
-        Jitsi Meet's servers to facilitate the meeting. We do not control Jitsi
-        Meet's data processing practices. Please review
-        <a href="https://jitsi.org/security/">Jitsi Meet’s Privacy Policy</a>
-        for more information on how they handle your data.
-      </p>
-
-      <h2>4. Children's Privacy</h2>
-      <p>
-        Our application is designed to be safe for users of all ages, including
-        children under 13. The content does not contain violence, adult
-        material, or inappropriate advertisements. We do not collect, store, or
-        share any personal data from users, making it safe for younger users
-        without requiring personally identifiable information. Our app complies
-        with the Children’s Online Privacy Protection Act (COPPA) and other
-        applicable regulations.
-      </p>
-
-      <h2>5. Security</h2>
-      <p>
-        We take reasonable measures to protect your data, including encryption
-        for data synchronization and secure local storage on your device. Your
-        data will not be transmitted outside your device without your explicit
-        consent.
-      </p>
-
-      <h2>6. User Rights</h2>
-      <p>You have the following rights regarding your data:</p>
-      <ul>
-        <li>
-          Deny or revoke access permissions in your device settings if you do
-          not wish to use certain features (e.g., camera, microphone).
-        </li>
-        <li>
-          Request access to or deletion of any locally stored data by contacting
-          us.
-        </li>
-        <li>
-          Be informed about how your data is used, as outlined in this policy.
-        </li>
-      </ul>
-      <p>
-        If you are in the EU or California, you may have additional rights under
-        GDPR or CCPA, such as the right to access, correct, or delete your data.
-      </p>
-
-      <h2>7. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. If we make
-        significant changes, we will notify users through the app or via email.
-        The updated policy will be posted on this page with a revised "Last
-        updated" date.
-      </p>
-
-      <h2>8. Contact</h2>
-      <p>
-        If you have any questions or concerns about this Privacy Policy, please
-        contact us at <strong>cshtbdattt@gmail.com</strong>.
-      </p>
-    </div>
-
-    <hr />
-
-    <div class="section">
-      <div class="lang-title">Tiếng Việt</div>
-      <p>
-        Chính sách Quyền Riêng Tư này áp dụng cho ứng dụng di động
-        <strong>QLH</strong> được phát triển bởi
-        <strong>Cục chuyển đổi số - Bộ Tài nguyên và Môi trường</strong>
-        ("chúng tôi"). Chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá
-        nhân của bạn. Chính sách này giải thích cách chúng tôi xử lý dữ liệu của
-        bạn, bao gồm dữ liệu chúng tôi thu thập, cách sử dụng và quyền của bạn
-        liên quan đến thông tin của mình. Chúng tôi không thu thập, lưu trữ hoặc
-        chia sẻ bất kỳ thông tin cá nhân nào của người dùng trừ khi được nêu rõ.
-      </p>
-
-      <h2>1. Dữ liệu được thu thập</h2>
-      <p>
-        Chúng tôi có thể truy cập các quyền hoặc dữ liệu sau, với sự đồng ý của
-        bạn:
-      </p>
-      <ul>
-        <li>
-          <strong>Bộ nhớ:</strong> Được sử dụng để lưu trữ tài liệu và tệp liên
-          quan đến cuộc họp cục bộ trên thiết bị của bạn. Các tệp này không được
-          truyền đến máy chủ của chúng tôi.
-        </li>
-        <li>
-          <strong>Internet:</strong> Được sử dụng để đồng bộ dữ liệu và tải nội
-          dung từ máy chủ để cung cấp chức năng ứng dụng.
-        </li>
-        <li>
-          <strong>Camera:</strong> Được sử dụng khi tham gia họp trực tuyến qua
-          Jitsi Meet để bật video của bạn, với sự cho phép rõ ràng của bạn.
-        </li>
-        <li>
-          <strong>Microphone:</strong> Được sử dụng khi tham gia họp Jitsi Meet
-          nếu bạn chọn bật âm thanh.
-        </li>
-      </ul>
-
-      <h2>2. Cách chúng tôi sử dụng dữ liệu</h2>
-      <p>
-        Tất cả dữ liệu được xử lý nội bộ trong ứng dụng để cung cấp và cải thiện
-        tính năng. Chúng tôi không truyền, thu thập hoặc lưu trữ dữ liệu của bạn
-        trên máy chủ bên ngoài trừ khi cần thiết cho chức năng ứng dụng (ví dụ:
-        đồng bộ hóa hoặc dịch vụ họp trực tuyến). Mọi dữ liệu được xử lý đều có
-        sự đồng ý của bạn và giới hạn trong các mục đích được nêu trong chính
-        sách này.
-      </p>
-
-      <h2>3. Dịch vụ bên thứ ba</h2>
-      <p>
-        Ứng dụng của chúng tôi tích hợp với Jitsi Meet để cung cấp chức năng họp
-        trực tuyến. Khi bạn sử dụng Jitsi Meet, dữ liệu video và âm thanh của
-        bạn có thể được xử lý bởi máy chủ của Jitsi Meet để hỗ trợ cuộc họp.
-        Chúng tôi không kiểm soát cách Jitsi Meet xử lý dữ liệu. Vui lòng xem
-        <a href="https://jitsi.org/security/"
-          >Chính sách Quyền Riêng Tư của Jitsi Meet</a
+      <div class="tabs" role="tablist" aria-label="Language tabs">
+        <button
+          id="tab-vi"
+          class="tab-btn"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-vi"
         >
-        để biết thêm thông tin về cách họ xử lý dữ liệu của bạn.
-      </p>
+          Tiếng Việt
+        </button>
+        <button
+          id="tab-en"
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-en"
+        >
+          English
+        </button>
+      </div>
 
-      <h2>4. Quyền riêng tư của trẻ em</h2>
-      <p>
-        Ứng dụng của chúng tôi được thiết kế để an toàn cho mọi lứa tuổi, bao
-        gồm trẻ em dưới 13 tuổi. Nội dung không chứa yếu tố bạo lực, nội dung
-        người lớn hoặc quảng cáo không phù hợp. Chúng tôi không thu thập, lưu
-        trữ hoặc chia sẻ bất kỳ dữ liệu cá nhân nào của người dùng, do đó ứng
-        dụng an toàn cho người dùng nhỏ tuổi mà không yêu cầu thông tin nhận
-        dạng cá nhân. Ứng dụng của chúng tôi tuân thủ Đạo luật Bảo vệ Quyền
-        Riêng Tư Trẻ em Trực tuyến (COPPA) và các quy định liên quan khác.
-      </p>
+      <!-- Vietnamese Panel -->
+      <section
+        id="panel-vi"
+        class="panel"
+        role="tabpanel"
+        aria-labelledby="tab-vi"
+      >
+        <div class="section">
+          <div class="lang-title">Tiếng Việt</div>
+          <p><em>Cập nhật lần cuối: Ngày 14 tháng 8 năm 2025</em></p>
+          <p>
+            Chính sách Quyền Riêng Tư này áp dụng cho ứng dụng di động
+            <strong>QLH</strong> được phát triển bởi
+            <strong>Cục chuyển đổi số - Bộ Tài nguyên và Môi trường</strong>
+            ("chúng tôi"). Chúng tôi cam kết bảo vệ quyền riêng tư và dữ liệu cá
+            nhân của bạn. Chính sách này giải thích cách chúng tôi xử lý dữ liệu
+            của bạn, bao gồm dữ liệu chúng tôi thu thập, cách sử dụng và quyền
+            của bạn liên quan đến thông tin của mình. Chúng tôi không thu thập,
+            lưu trữ hoặc chia sẻ bất kỳ thông tin cá nhân nào của người dùng trừ
+            khi được nêu rõ.
+          </p>
 
-      <h2>5. Bảo mật</h2>
-      <p>
-        Chúng tôi áp dụng các biện pháp hợp lý để bảo vệ dữ liệu của bạn, bao
-        gồm mã hóa cho đồng bộ hóa dữ liệu và lưu trữ an toàn trên thiết bị của
-        bạn. Dữ liệu của bạn sẽ không được truyền ra ngoài thiết bị nếu không có
-        sự đồng ý rõ ràng của bạn.
-      </p>
+          <h2>1. Dữ liệu được thu thập</h2>
+          <p>
+            Chúng tôi có thể truy cập các quyền hoặc dữ liệu sau, với sự đồng ý
+            của bạn:
+          </p>
+          <ul>
+            <li>
+              <strong>Thông tin đăng nhập:</strong> Chúng tôi thu thập tên đăng
+              nhập, mật khẩu và token đăng nhập để xác thực. Dữ liệu này được
+              lưu trữ an toàn cục bộ trên thiết bị bằng
+              <code>flutter_secure_storage</code> và sẽ bị xóa ngay khi bạn đăng
+              xuất.
+            </li>
+            <li>
+              <strong>Bộ nhớ:</strong> Được sử dụng để lưu trữ tài liệu và tệp
+              liên quan đến cuộc họp cục bộ trên thiết bị của bạn. Các tệp này
+              không được truyền đến máy chủ của chúng tôi.
+            </li>
+            <li>
+              <strong>Internet:</strong> Được sử dụng để đồng bộ dữ liệu và tải
+              nội dung từ máy chủ để cung cấp chức năng ứng dụng.
+            </li>
+            <li>
+              <strong>Camera:</strong> Được sử dụng khi tham gia họp trực tuyến
+              qua Jitsi Meet để bật video của bạn, với sự cho phép rõ ràng của
+              bạn.
+            </li>
+            <li>
+              <strong>Microphone:</strong> Được sử dụng khi tham gia họp Jitsi
+              Meet nếu bạn chọn bật âm thanh.
+            </li>
+          </ul>
 
-      <h2>6. Quyền của người dùng</h2>
-      <p>Bạn có các quyền sau liên quan đến dữ liệu của mình:</p>
-      <ul>
-        <li>
-          Từ chối hoặc thu hồi quyền truy cập trong cài đặt thiết bị nếu bạn
-          không muốn sử dụng một số chức năng (ví dụ: camera, microphone).
-        </li>
-        <li>
-          Yêu cầu truy cập hoặc xóa dữ liệu được lưu trữ cục bộ bằng cách liên
-          hệ với chúng tôi.
-        </li>
-        <li>
-          Được thông báo về cách dữ liệu của bạn được sử dụng, như được nêu
-          trong chính sách này.
-        </li>
-      </ul>
-      <p>
-        Nếu bạn ở EU hoặc California, bạn có thể có thêm quyền theo GDPR hoặc
-        CCPA, chẳng hạn như quyền truy cập, chỉnh sửa hoặc xóa dữ liệu của bạn.
-      </p>
+          <h2>2. Cách chúng tôi sử dụng dữ liệu</h2>
+          <p>
+            Tất cả dữ liệu, bao gồm thông tin đăng nhập của bạn, được xử lý nội
+            bộ trong ứng dụng để cung cấp và cải thiện tính năng. Thông tin đăng
+            nhập được lưu trữ an toàn bằng bộ nhớ được mã hóa và sẽ bị xóa ngay
+            khi bạn đăng xuất. Chúng tôi không truyền, thu thập hoặc lưu trữ dữ
+            liệu của bạn trên máy chủ bên ngoài trừ khi cần thiết cho chức năng
+            ứng dụng (ví dụ: đồng bộ hóa hoặc dịch vụ họp trực tuyến). Mọi dữ
+            liệu được xử lý đều có sự đồng ý của bạn và giới hạn trong các mục
+            đích được nêu trong chính sách này.
+          </p>
 
-      <h2>7. Thay đổi chính sách này</h2>
-      <p>
-        Chúng tôi có thể cập nhật Chính sách Quyền Riêng Tư này theo thời gian.
-        Nếu có thay đổi đáng kể, chúng tôi sẽ thông báo cho người dùng qua ứng
-        dụng hoặc qua email. Chính sách cập nhật sẽ được đăng trên trang này với
-        ngày "Cập nhật lần cuối" được sửa đổi.
-      </p>
+          <h2>3. Dịch vụ bên thứ ba</h2>
+          <p>
+            Ứng dụng của chúng tôi tích hợp với Jitsi Meet để cung cấp chức năng
+            họp trực tuyến. Khi bạn sử dụng Jitsi Meet, dữ liệu video và âm
+            thanh của bạn có thể được xử lý bởi máy chủ của Jitsi Meet để hỗ trợ
+            cuộc họp. Chúng tôi không kiểm soát cách Jitsi Meet xử lý dữ liệu.
+            Vui lòng xem
+            <a href="https://jitsi.org/security/">
+              Chính sách Quyền Riêng Tư của Jitsi Meet</a
+            >
+            để biết thêm thông tin về cách họ xử lý dữ liệu của bạn.
+          </p>
 
-      <h2>8. Liên hệ</h2>
-      <p>
-        Nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào về Chính sách Quyền Riêng Tư
-        này, vui lòng liên hệ qua email: <strong>cshtbdattt@gmail.com</strong>.
-      </p>
+          <h2>4. Quyền riêng tư của trẻ em</h2>
+          <p>
+            Ứng dụng của chúng tôi được thiết kế để an toàn cho mọi lứa tuổi,
+            bao gồm trẻ em dưới 13 tuổi. Nội dung không chứa yếu tố bạo lực, nội
+            dung người lớn hoặc quảng cáo không phù hợp. Chúng tôi không thu
+            thập, lưu trữ hoặc chia sẻ bất kỳ dữ liệu cá nhân nào của người
+            dùng, do đó ứng dụng an toàn cho người dùng nhỏ tuổi mà không yêu
+            cầu thông tin nhận dạng cá nhân. Ứng dụng của chúng tôi tuân thủ Đạo
+            luật Bảo vệ Quyền Riêng Tư Trẻ em Trực tuyến (COPPA) và các quy định
+            liên quan khác.
+          </p>
+
+          <h2>5. Bảo mật</h2>
+          <p>
+            Chúng tôi áp dụng các biện pháp hợp lý để bảo vệ dữ liệu của bạn,
+            bao gồm mã hóa cho đồng bộ hóa dữ liệu và lưu trữ an toàn trên thiết
+            bị của bạn. Thông tin đăng nhập được mã hóa và lưu trữ an toàn, và
+            sẽ bị xóa tự động khi bạn đăng xuất. Dữ liệu của bạn sẽ không được
+            truyền ra ngoài thiết bị nếu không có sự đồng ý rõ ràng của bạn.
+          </p>
+
+          <h2>6. Quyền của người dùng</h2>
+          <p>Bạn có các quyền sau liên quan đến dữ liệu của mình:</p>
+          <ul>
+            <li>
+              Từ chối hoặc thu hồi quyền truy cập trong cài đặt thiết bị nếu bạn
+              không muốn sử dụng một số chức năng (ví dụ: camera, microphone).
+            </li>
+            <li>
+              Yêu cầu truy cập hoặc xóa dữ liệu được lưu trữ cục bộ, bao gồm
+              thông tin đăng nhập, bằng cách liên hệ với chúng tôi hoặc đăng
+              xuất.
+            </li>
+            <li>
+              Được thông báo về cách dữ liệu của bạn được sử dụng, như được nêu
+              trong chính sách này.
+            </li>
+          </ul>
+          <p>
+            Nếu bạn ở EU hoặc California, bạn có thể có thêm quyền theo GDPR
+            hoặc CCPA, chẳng hạn như quyền truy cập, chỉnh sửa hoặc xóa dữ liệu
+            của bạn.
+          </p>
+
+          <h2>7. Thay đổi chính sách này</h2>
+          <p>
+            Chúng tôi có thể cập nhật Chính sách Quyền Riêng Tư này theo thời
+            gian. Nếu có thay đổi đáng kể, chúng tôi sẽ thông báo cho người dùng
+            qua ứng dụng hoặc qua email. Chính sách cập nhật sẽ được đăng trên
+            trang này với ngày "Cập nhật lần cuối" được sửa đổi.
+          </p>
+
+          <h2>8. Liên hệ</h2>
+          <p>
+            Nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào về Chính sách Quyền
+            Riêng Tư này, vui lòng liên hệ qua email:
+            <strong>cshtbdattt@gmail.com</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- English Panel -->
+      <section
+        id="panel-en"
+        class="panel"
+        role="tabpanel"
+        aria-labelledby="tab-en"
+        hidden
+      >
+        <div class="section">
+          <div class="lang-title">English</div>
+          <p><em>Last updated: August 14, 2025</em></p>
+          <p>
+            This Privacy Policy applies to the mobile application
+            <strong>QLH</strong> developed by
+            <strong>Cục chuyển đổi số - Bộ Tài nguyên và Môi trường</strong>
+            ("we", "our", "us"). We are committed to protecting your privacy and
+            personal data. This Privacy Policy explains how we handle your data,
+            including what data we collect, how we use it, and your rights
+            regarding your information. We do not collect, store, or share any
+            personal information from our users unless explicitly stated.
+          </p>
+
+          <h2>1. Data Collected</h2>
+          <p>
+            We may access the following permissions or data, with your consent:
+          </p>
+          <ul>
+            <li>
+              <strong>Login Information:</strong> We collect your username,
+              password, and login token for authentication purposes. These are
+              securely stored locally on your device using
+              <code>flutter_secure_storage</code> and are automatically deleted
+              when you log out.
+            </li>
+            <li>
+              <strong>Storage:</strong> Used to save meeting documents and
+              related files locally on your device. These files are not
+              transmitted to our servers.
+            </li>
+            <li>
+              <strong>Internet:</strong> Used for data synchronization and
+              loading content from our servers to provide app functionality.
+            </li>
+            <li>
+              <strong>Camera:</strong> Used when joining online meetings via
+              Jitsi Meet to enable your video, with your explicit permission.
+            </li>
+            <li>
+              <strong>Microphone:</strong> Used when participating in Jitsi Meet
+              meetings if you choose to enable audio.
+            </li>
+          </ul>
+
+          <h2>2. How We Use Data</h2>
+          <p>
+            All data, including your login credentials, is processed locally
+            within the app to provide and improve its features. Login
+            information is stored securely using encrypted local storage and
+            will be deleted immediately when you log out. We do not transmit,
+            collect, or store your data on external servers unless necessary for
+            app functionality (e.g., synchronization or online meeting
+            services). Any data processed is done so with your consent and is
+            limited to the purposes outlined in this policy.
+          </p>
+
+          <h2>3. Third-Party Services</h2>
+          <p>
+            Our app integrates with Jitsi Meet for online meeting functionality.
+            When you use Jitsi Meet, your video and audio data may be processed
+            by Jitsi Meet's servers to facilitate the meeting. We do not control
+            Jitsi Meet's data processing practices. Please review
+            <a href="https://jitsi.org/security/"
+              >Jitsi Meet’s Privacy Policy</a
+            >
+            for more information on how they handle your data.
+          </p>
+
+          <h2>4. Children's Privacy</h2>
+          <p>
+            Our application is designed to be safe for users of all ages,
+            including children under 13. The content does not contain violence,
+            adult material, or inappropriate advertisements. We do not collect,
+            store, or share any personal data from users, making it safe for
+            younger users without requiring personally identifiable information.
+            Our app complies with the Children’s Online Privacy Protection Act
+            (COPPA) and other applicable regulations.
+          </p>
+
+          <h2>5. Security</h2>
+          <p>
+            We take reasonable measures to protect your data, including
+            encryption for data synchronization and secure local storage on your
+            device. Login credentials are encrypted and stored securely, and
+            they are automatically removed upon logout. Your data will not be
+            transmitted outside your device without your explicit consent.
+          </p>
+
+          <h2>6. User Rights</h2>
+          <p>You have the following rights regarding your data:</p>
+          <ul>
+            <li>
+              Deny or revoke access permissions in your device settings if you
+              do not wish to use certain features (e.g., camera, microphone).
+            </li>
+            <li>
+              Request access to or deletion of any locally stored data,
+              including login credentials, by contacting us or logging out.
+            </li>
+            <li>
+              Be informed about how your data is used, as outlined in this
+              policy.
+            </li>
+          </ul>
+          <p>
+            If you are in the EU or California, you may have additional rights
+            under GDPR or CCPA, such as the right to access, correct, or delete
+            your data.
+          </p>
+
+          <h2>7. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. If we make
+            significant changes, we will notify users through the app or via
+            email. The updated policy will be posted on this page with a revised
+            "Last updated" date.
+          </p>
+
+          <h2>8. Contact</h2>
+          <p>
+            If you have any questions or concerns about this Privacy Policy,
+            please contact us at <strong>cshtbdattt@gmail.com</strong>.
+          </p>
+        </div>
+      </section>
     </div>
+
+    <script>
+      (function () {
+        const tabVi = document.getElementById("tab-vi");
+        const tabEn = document.getElementById("tab-en");
+        const panelVi = document.getElementById("panel-vi");
+        const panelEn = document.getElementById("panel-en");
+
+        function select(lang) {
+          const isVi = lang === "vi";
+          tabVi.setAttribute("aria-selected", String(isVi));
+          tabEn.setAttribute("aria-selected", String(!isVi));
+          panelVi.hidden = !isVi;
+          panelEn.hidden = isVi;
+          document.documentElement.lang = isVi ? "vi" : "en";
+          // Update hash for shareable link
+          const newHash = isVi ? "#vi" : "#en";
+          if (location.hash !== newHash) {
+            history.replaceState(null, "", newHash);
+          }
+        }
+
+        // Click handlers
+        tabVi.addEventListener("click", () => select("vi"));
+        tabEn.addEventListener("click", () => select("en"));
+
+        // Initial state from URL (#vi or #en) or ?lang=
+        const params = new URLSearchParams(location.search);
+        const qlang = (params.get("lang") || "").toLowerCase();
+        const hash = (location.hash || "").replace("#", "").toLowerCase();
+        if (qlang === "en" || hash === "en") select("en");
+        else select("vi");
+      })();
+    </script>
   </body>
 </html>
